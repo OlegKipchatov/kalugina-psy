@@ -13,6 +13,9 @@ module.exports = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
       },
+      zIndex: {
+        '10000': '10000',
+      }
     },
   },
   darkMode: "class",

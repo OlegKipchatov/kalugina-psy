@@ -5,31 +5,13 @@ export const siteConfig = {
   description: "Калугина Таисия — профессиональный психолог. Индивидуальные консультации, помощь в решении личных и профессиональных вопросов, работа с тревожностью, стрессом и самооценкой. Доверительная атмосфера и эффективные методы для гармонии и внутреннего баланса.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "Обо мне",
+      href: "#about",
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    telegram: "https://t.me/taissssssssss",
+    whatsapp: "https://wa.me/79190703015",
+    vk: "https://vk.com/taissssssssss"
   },
 };
