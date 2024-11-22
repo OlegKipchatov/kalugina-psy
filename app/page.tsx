@@ -1,10 +1,7 @@
-"use client";
-
-import { Image, Accordion, AccordionItem, Link } from "@nextui-org/react";
-
 import ImageCarousel from "@/components/image-carousel";
-import { siteConfig } from "@/config/site";
-import { TelegramIcon, VKIcon, WhatsAppIcon } from "@/components/icons";
+import { ContactList } from "@/components/contact-list";
+import { WorksAccordion } from "@/components/works-accordion";
+import { Image } from "@/components/image";
 
 export default function Home() {
   return (
@@ -22,36 +19,11 @@ export default function Home() {
             <li>Доказательные методы</li>
           </ul>
 
-          <div className="flex gap-8">
-            <Link
-              isExternal
-              aria-label="Telegram"
-              color="foreground"
-              href={siteConfig.links.telegram}
-            >
-              <TelegramIcon size={50} />
-            </Link>
-            <Link
-              isExternal
-              aria-label="WhatsApp"
-              color="foreground"
-              href={siteConfig.links.telegram}
-            >
-              <WhatsAppIcon size={50} />
-            </Link>
-            <Link
-              isExternal
-              aria-label="VK"
-              color="foreground"
-              href={siteConfig.links.telegram}
-            >
-              <VKIcon size={50} />
-            </Link>
-          </div>
+          <ContactList />
         </div>
 
         <div className="flex-shrink-0 w-full md:w-1/2">
-          <Image alt="Логотип" src="/img/main.jpg" />
+          <Image alt="Фотография психолога" src="/kalugina-psy/img/main.jpg" />
         </div>
       </section>
 
@@ -62,47 +34,14 @@ export default function Home() {
 
         <div className="flex justify-between gap-12 w-full px-4">
           <div className="w-full lg:w-2/3">
-            <Accordion
-              itemClasses={{
-                title: "text-2xl",
-                content: "text-md",
-              }}
-            >
-              <AccordionItem title="Неврозы">
-                Немедикаментозное лечение невротических расстройств
-              </AccordionItem>
-
-              <AccordionItem title="Хроническая тревога">
-                Тревожные расстройства, паническое расстройство
-              </AccordionItem>
-
-              <AccordionItem title="Отношения">
-                Сложно в отношениях с партнером, родителями, детьми, на работе
-                (конфликты, ссоры, непонимание, развод измены)
-              </AccordionItem>
-
-              <AccordionItem title="Искажения">
-                Не получается сближаться, сложно с доверием, не могу найти
-                подходящего партнера, сложно отстаиваю свою позицию, завишу от
-                мнения других людей
-              </AccordionItem>
-
-              <AccordionItem title="Самооценка">
-                Проблемы с отношением к себе: недовольство собой, самообвинения,
-                нет собственной ценности
-              </AccordionItem>
-
-              <AccordionItem title="Эмоции">
-                Беспокоят чувства: тревоги, стыд, вина, обида, боль, страх,
-                злость, горе, разочарование. Трудности в эмоциональной регуляции
-              </AccordionItem>
-            </Accordion>
+            <WorksAccordion />
           </div>
 
           <div className="hidden lg:flex justify-center items-center w-1/3">
             <Image
+              alt="Фотография психолога за столом"
               className="w-full h-auto object-cover"
-              src="./img/work.jpg"
+              src="/kalugina-psy/img/work.jpg"
             />
           </div>
         </div>
@@ -130,9 +69,18 @@ export default function Home() {
       <section className="flex justify-center w-full py-8">
         <div className="w-full max-w-xl p-2">
           <ImageCarousel>
-            <Image className="" src="./img/diplom-1.jpg" />
-            <Image className="" src="./img/diplom-2.jpg" />
-            <Image className="" src="./img/diplom-3.jpg" />
+            <Image
+              alt="Дипломн о проффесиональной переподготовки"
+              src="/kalugina-psy/img/diplom-1.jpg"
+            />
+            <Image
+              alt="Дипломн о проффесиональной переподготовки - 2"
+              src="/kalugina-psy/img/diplom-3.jpg"
+            />
+            <Image
+              alt="Диплом специалиста"
+              src="/kalugina-psy/img/diplom-2.jpg"
+            />
           </ImageCarousel>
         </div>
       </section>
@@ -218,32 +166,7 @@ export default function Home() {
             </h4>
             <p className="text-4xl font-bold mb-4">2000 ₽</p>
 
-            <div className="flex gap-8">
-              <Link
-                isExternal
-                aria-label="Telegram"
-                color="foreground"
-                href={siteConfig.links.telegram}
-              >
-                <TelegramIcon size={50} />
-              </Link>
-              <Link
-                isExternal
-                aria-label="WhatsApp"
-                color="foreground"
-                href={siteConfig.links.telegram}
-              >
-                <WhatsAppIcon size={50} />
-              </Link>
-              <Link
-                isExternal
-                aria-label="VK"
-                color="foreground"
-                href={siteConfig.links.telegram}
-              >
-                <VKIcon size={50} />
-              </Link>
-            </div>
+            <ContactList />
           </div>
         </div>
       </section>
