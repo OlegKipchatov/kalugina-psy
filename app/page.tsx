@@ -161,7 +161,7 @@ export default function Home() {
           </div>
 
           <div className="flex-1 flex flex-col items-center w-full lg:max-w-sm border border-default-300 rounded-lg p-6">
-            <h4 className="text-lg font-semibold text-default-800 mb-2">
+            <h4 className="text-lg font-semibold text-center text-default-800 mb-2">
               Оплата за одну сессию
             </h4>
             <p className="text-4xl font-bold mb-4">2000 ₽</p>
