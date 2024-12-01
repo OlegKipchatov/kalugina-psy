@@ -22,9 +22,13 @@ export default function Home() {
           <ContactList />
         </div>
 
-        <div className="flex-shrink-0 w-full md:w-1/2">
+        <div className="hidden md:flex flex-shrink-0 w-full md:w-1/2">
           <Image alt="Фотография психолога" src="/kalugina-psy/img/main.jpg" />
         </div>
+      </section>
+
+      <section className="-mx-6 md:hidden">
+        <Image alt="Фотография психолога" src="/kalugina-psy/img/main.jpg" />
       </section>
 
       <section className="flex flex-col justify-center w-full py-8">
@@ -118,6 +122,10 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto py-12 px-6">
+        <Image alt="Фото за столом" src="/kalugina-psy/img/work-2.jpg" />
       </section>
 
       <section className="max-w-4xl mx-auto py-12 px-6 rounded-lg">
