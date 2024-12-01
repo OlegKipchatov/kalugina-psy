@@ -23,12 +23,12 @@ export default function Home() {
         </div>
 
         <div className="hidden md:flex flex-shrink-0 w-full md:w-1/2">
-          <Image alt="Фотография психолога" src="/kalugina-psy/img/main.jpg" />
+          <Image alt="Фотография психолога" src="/img/main.jpg" />
         </div>
       </section>
 
       <section className="-mx-6 md:hidden">
-        <Image alt="Фотография психолога" src="/kalugina-psy/img/main.jpg" />
+        <Image alt="Фотография психолога" src="/img/main.jpg" />
       </section>
 
       <section className="flex flex-col justify-center w-full py-8">
@@ -45,7 +45,7 @@ export default function Home() {
             <Image
               alt="Фотография психолога за столом"
               className="w-full h-auto object-cover"
-              src="/kalugina-psy/img/work.jpg"
+              src="/img/work.jpg"
             />
           </div>
         </div>
@@ -75,15 +75,15 @@ export default function Home() {
           <ImageCarousel>
             <Image
               alt="Дипломн о проффесиональной переподготовки"
-              src="/kalugina-psy/img/diplom-1.jpg"
+              src="/img/diplom-1.jpg"
             />
             <Image
               alt="Дипломн о проффесиональной переподготовки - 2"
-              src="/kalugina-psy/img/diplom-3.jpg"
+              src="/img/diplom-3.jpg"
             />
             <Image
               alt="Диплом специалиста"
-              src="/kalugina-psy/img/diplom-2.jpg"
+              src="/img/diplom-2.jpg"
             />
           </ImageCarousel>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-4xl mx-auto py-12 px-6">
-        <Image alt="Фото за столом" src="/kalugina-psy/img/work-2.jpg" />
+        <Image alt="Фото за столом" src="/img/work-2.jpg" />
       </section>
 
       <section className="max-w-4xl mx-auto py-12 px-6 rounded-lg">
