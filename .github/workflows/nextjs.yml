@@ -94,6 +94,8 @@ jobs:
         with:
           name: build-artifacts
           path: out
+      - name: Create .nojekyll
+        run: echo > ./out/.nojekyll
       - name: Deploy in gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
