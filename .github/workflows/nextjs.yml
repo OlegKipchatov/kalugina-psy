@@ -69,8 +69,10 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: npm run build
-      - name: Copy nojekyll
-        run: cp ./.nojekyll ./out/.nojekyll || echo ".nojekyll file dont copy"
+      - name: Create .nojekyll
+        run: echo > ./out/.nojekyll
+      # - name: Copy nojekyll
+      #   run: ls && cp ./.nojekyll ./out/.nojekyll
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
