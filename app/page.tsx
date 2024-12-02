@@ -81,10 +81,7 @@ export default function Home() {
               alt="Дипломн о проффесиональной переподготовки - 2"
               src="/img/diplom-3.jpg"
             />
-            <Image
-              alt="Диплом специалиста"
-              src="/img/diplom-2.jpg"
-            />
+            <Image alt="Диплом специалиста" src="/img/diplom-2.jpg" />
           </ImageCarousel>
         </div>
       </section>

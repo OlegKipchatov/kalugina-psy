@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
+// eslint-disable-next-line import/order
 import { fontSans } from "@/config/fonts";
 
 import "react-multi-carousel/lib/styles.css";
