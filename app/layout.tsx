@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+import { Suspense } from "react";
 
 import { Providers } from "./providers";
 
@@ -10,6 +11,7 @@ import { fontSans } from "@/config/fonts";
 
 import "react-multi-carousel/lib/styles.css";
 import { Navbar } from "@/components/navbar";
+import { YandexMetric } from "@/components/yandex-metric";
 
 export const metadata: Metadata = {
   title: {
@@ -36,7 +38,6 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
@@ -49,6 +50,9 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
+            <Suspense>
+              <YandexMetric />
+            </Suspense>
           </div>
         </Providers>
       </body>
