@@ -38,6 +38,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
+      <head>
+        <meta content="ed7c84e759c773b0" name="yandex-verification" />
+      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
